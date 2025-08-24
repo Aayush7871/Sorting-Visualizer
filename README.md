@@ -62,6 +62,21 @@ A beautiful, interactive web application that visualizes various sorting algorit
 - **CSS3**: Modern styling with gradients, animations, and responsive design
 - **Vanilla JavaScript**: ES6+ features, async/await, and modern DOM manipulation
 
+### **Environment Configuration**
+The project includes a `config.env` template file that you can copy to `.env` for local development. This file contains:
+- Application settings (port, host, environment)
+- Feature flags for enabling/disabling features
+- Performance and animation settings
+- UI configuration options
+- Development and debugging settings
+- API configuration for future backend integration
+- Security and CORS settings
+
+**To use environment variables:**
+1. Copy `config.env` to `.env`
+2. Modify the values as needed for your environment
+3. The `.env` file is automatically ignored by Git for security
+
 ### **Browser Compatibility**
 - Chrome 60+
 - Firefox 55+
@@ -81,6 +96,8 @@ sorting-visualizer/
 ├── index.html          # Main HTML structure
 ├── styles.css          # CSS styling and animations
 ├── script.js           # JavaScript logic and algorithms
+├── config.env          # Environment configuration template
+├── .gitignore          # Git ignore rules
 └── README.md           # Project documentation
 ```
 
