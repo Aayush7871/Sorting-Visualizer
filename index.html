@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sorting Algorithm Visualizer</h1>
+            <p>Watch different sorting algorithms in action!</p>
+        </header>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="array-size">Array Size:</label>
+                <input type="range" id="array-size" min="5" max="100" value="30">
+                <span id="size-value">30</span>
+            </div>
+
+            <div class="control-group">
+                <label for="speed">Speed:</label>
+                <input type="range" id="speed" min="1" max="10" value="5">
+                <span id="speed-value">5</span>
+            </div>
+
+            <div class="control-group">
+                <button id="generate-btn">Generate New Array</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+        </div>
+
+        <div class="algorithm-buttons">
+            <button class="algo-btn" data-algorithm="bubble">Bubble Sort</button>
+            <button class="algo-btn" data-algorithm="selection">Selection Sort</button>
+            <button class="algo-btn" data-algorithm="insertion">Insertion Sort</button>
+            <button class="algo-btn" data-algorithm="merge">Merge Sort</button>
+            <button class="algo-btn" data-algorithm="quick">Quick Sort</button>
+            <button class="algo-btn" data-algorithm="heap">Heap Sort</button>
+        </div>
+
+        <div class="visualization-container">
+            <div id="array-container"></div>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-label">Comparisons:</span>
+                    <span id="comparisons">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Swaps:</span>
+                    <span id="swaps">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Time:</span>
+                    <span id="time">0ms</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <h3>Algorithm Information</h3>
+            <div id="algorithm-info">
+                <p>Select an algorithm to see information about it.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
